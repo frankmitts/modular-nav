@@ -5,14 +5,80 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
-  \-moz-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   box-sizing: border-box;
-  font: 100% sans-serif;
+  font-family: sans-serif;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.section-dark {
+  background-color: #e2e2e2;
+}
+
+a {
+  color: #0074d9;
+}
+
+.masthead {
+  text-align: center;
+}
+
+.nav {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+}
+
+.nav a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.current {
+  background-color: #0074d9;
+  color: #fff;
+}
+
+a:active {
+  background-color: #0074d9;
+  color: #fff;
+}
+
+a:hover {
+  background-color: #0074d9;
+  color: #fff;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .nav li {
+    display: inline-block;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .masthead {
+    text-align: left;
+  }
+
+  .nav {
+    text-align: right;
+  }
 }
